@@ -17,20 +17,17 @@ public class Main {
         library.addBook(book5);
 
 
-        library.printAvailbleBooks();
+        library.printAvailableBooksList();
 
         System.out.println("Берем книгу...");
-
         book1.borrowBook();
-
-
-        library.printAvailbleBooks();
+        library.printAvailableBooksList();
 
 
         System.out.println("Возвращаем книгу...");
         book1.returnBook();
+        library.printAvailableBooksList();
 
-        library.printAvailbleBooks();
 
     }
 }
